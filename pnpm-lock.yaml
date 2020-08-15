@@ -1,9 +1,12 @@
 dependencies:
+  '@mdi/font': 3.9.97
   core-js: 3.6.5
+  roboto-fontface: 0.10.0
   vue: 2.6.11
   vue-class-component: 7.2.5_vue@2.6.11
   vue-property-decorator: 8.5.1_vue@2.6.11
   vue-router: 3.4.3
+  vuetify: 2.3.8_vue@2.6.11
   vuex: 3.5.1_vue@2.6.11
 devDependencies:
   '@types/jest': 24.9.1
@@ -27,7 +30,9 @@ devDependencies:
   sass: 1.26.10
   sass-loader: 8.0.2_sass@1.26.10
   typescript: 3.9.7
+  vue-cli-plugin-vuetify: 2.0.7
   vue-template-compiler: 2.6.11
+  vuetify-loader: 1.6.0_7939cbd8340093802e57bc8872be1c36
 lockfileVersion: 5.1
 packages:
   /@ant-design-vue/babel-helper-vue-transform-on/1.0.1:
@@ -1362,6 +1367,11 @@ packages:
     resolution:
       integrity: sha1-Y8smy3UA0Gnlo4lEGnxqtekJ/Fk=
       tarball: '@jest/types/download/@jest/types-24.9.0.tgz'
+  /@mdi/font/3.9.97:
+    dev: false
+    resolution:
+      integrity: sha1-ufMeBVdEUuhPV+W4HTT/1ZO8nCk=
+      tarball: '@mdi/font/download/@mdi/font-3.9.97.tgz'
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
@@ -1698,6 +1708,7 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
       tsutils: 3.17.1_typescript@3.9.7
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -1705,6 +1716,9 @@ packages:
       '@typescript-eslint/parser': ^2.0.0
       eslint: ^5.0.0 || ^6.0.0
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-b4zopGx96kpvHRcdK7j7rm2sK+k=
       tarball: '@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.34.0.tgz'
@@ -1731,12 +1745,16 @@ packages:
       '@typescript-eslint/typescript-estree': 2.34.0_typescript@3.9.7
       eslint: 6.8.0
       eslint-visitor-keys: 1.3.0
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-UCUmMMoxloVCDpo5ygX+GFola8g=
       tarball: '@typescript-eslint/parser/download/@typescript-eslint/parser-2.34.0.tgz'
@@ -1749,11 +1767,15 @@ packages:
       lodash: 4.17.20
       semver: 7.3.2
       tsutils: 3.17.1_typescript@3.9.7
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     peerDependencies:
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-FK62NTs57wcyzH8bgoUpSTfPN9U=
       tarball: '@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.34.0.tgz'
@@ -5657,6 +5679,18 @@ packages:
     resolution:
       integrity: sha1-yg9u+m3T1WEzP7FFFQZcL6/fQ5w=
       tarball: file-entry-cache/download/file-entry-cache-5.0.1.tgz
+  /file-loader/4.3.0:
+    dependencies:
+      loader-utils: 1.4.0
+      schema-utils: 2.7.0
+    dev: true
+    engines:
+      node: '>= 8.9.0'
+    peerDependencies:
+      webpack: ^4.0.0
+    resolution:
+      integrity: sha1-eA8ED3KbPRgBnyBgX3I+hEuKWK8=
+      tarball: file-loader/download/file-loader-4.3.0.tgz
   /file-loader/4.3.0_webpack@4.44.1:
     dependencies:
       loader-utils: 1.4.0
@@ -6755,6 +6789,13 @@ packages:
     resolution:
       integrity: sha1-hFRSuq2dLKO2nGNaE3rLmg2tCQc=
       tarball: internal-ip/download/internal-ip-4.3.0.tgz
+  /interpret/1.4.0:
+    dev: true
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha1-Zlq4vE2iendKQFhOgS4+D6RbGh4=
+      tarball: interpret/download/interpret-1.4.0.tgz
   /invariant/2.2.4:
     dependencies:
       loose-envify: 1.4.0
@@ -8972,6 +9013,18 @@ packages:
     resolution:
       integrity: sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
       tarball: nth-check/download/nth-check-1.0.2.tgz
+  /null-loader/3.0.0:
+    dependencies:
+      loader-utils: 1.4.0
+      schema-utils: 1.0.0
+    dev: true
+    engines:
+      node: '>= 8.9.0'
+    peerDependencies:
+      webpack: ^4.3.0
+    resolution:
+      integrity: sha1-PitsZjxb2oxzpUNX2PoHCNxhskU=
+      tarball: null-loader/download/null-loader-3.0.0.tgz
   /num2fraction/1.2.2:
     dev: true
     resolution:
@@ -10424,6 +10477,15 @@ packages:
     resolution:
       integrity: sha1-IAMpT+oj+wZy8kduviL89Jii1lw=
       tarball: realpath-native/download/realpath-native-1.1.0.tgz
+  /rechoir/0.6.2:
+    dependencies:
+      resolve: 1.17.0
+    dev: true
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
+      tarball: rechoir/download/rechoir-0.6.2.tgz
   /regenerate-unicode-properties/8.2.0:
     dependencies:
       regenerate: 1.4.1
@@ -10789,6 +10851,11 @@ packages:
     resolution:
       integrity: sha1-ocGm9iR1FXe6XQeRTLyShQWFiQw=
       tarball: ripemd160/download/ripemd160-2.0.2.tgz
+  /roboto-fontface/0.10.0:
+    dev: false
+    resolution:
+      integrity: sha1-fu5Az6GLH35OYF6vGidAr7b9cbA=
+      tarball: roboto-fontface/download/roboto-fontface-0.10.0.tgz
   /rsvp/4.8.5:
     dev: true
     engines:
@@ -10884,6 +10951,13 @@ packages:
       node-sass: ^4.0.0
       sass: ^1.3.0
       webpack: ^4.36.0 || ^5.0.0
+    peerDependenciesMeta:
+      fibers:
+        optional: true
+      node-sass:
+        optional: true
+      sass:
+        optional: true
     resolution:
       integrity: sha1-3r7NjDziQ8dkVPLoKQSCFQOACQ0=
       tarball: sass-loader/download/sass-loader-8.0.2.tgz
@@ -11118,6 +11192,18 @@ packages:
     resolution:
       integrity: sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
       tarball: shell-quote/download/shell-quote-1.7.2.tgz
+  /shelljs/0.8.4:
+    dependencies:
+      glob: 7.1.6
+      interpret: 1.4.0
+      rechoir: 0.6.2
+    dev: true
+    engines:
+      node: '>=4'
+    hasBin: true
+    resolution:
+      integrity: sha1-3naE/ut2f4cWsyYHiooAh1iQ48I=
+      tarball: shelljs/download/shelljs-0.8.4.tgz
   /shellwords/0.1.1:
     dev: true
     resolution:
@@ -12510,6 +12596,15 @@ packages:
     resolution:
       integrity: sha1-ISs1SMT90zFHdMStvBw3kqQLUtA=
       tarball: vue-class-component/download/vue-class-component-7.2.5.tgz
+  /vue-cli-plugin-vuetify/2.0.7:
+    dependencies:
+      null-loader: 3.0.0
+      semver: 7.3.2
+      shelljs: 0.8.4
+    dev: true
+    resolution:
+      integrity: sha1-/LTxZV58kZnuQNy/ZGXiNV/QdNU=
+      tarball: vue-cli-plugin-vuetify/download/vue-cli-plugin-vuetify-2.0.7.tgz
   /vue-eslint-parser/7.1.0_eslint@6.8.0:
     dependencies:
       debug: 4.1.1
@@ -12635,6 +12730,29 @@ packages:
     resolution:
       integrity: sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
       tarball: vue/download/vue-2.6.11.tgz?cache=0&sync_timestamp=1596069980766&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.11.tgz
+  /vuetify-loader/1.6.0_7939cbd8340093802e57bc8872be1c36:
+    dependencies:
+      file-loader: 4.3.0
+      loader-utils: 1.4.0
+      vue-template-compiler: 2.6.11
+      vuetify: 2.3.8_vue@2.6.11
+    dev: true
+    peerDependencies:
+      vue-template-compiler: ^2.6.10
+      vuetify: ^1.3.0 || ^2.0.0
+      webpack: ^4.0.0
+    resolution:
+      integrity: sha1-Bd8IBbOrL/DeGYEJ00+do/adpmc=
+      tarball: vuetify-loader/download/vuetify-loader-1.6.0.tgz
+  /vuetify/2.3.8_vue@2.6.11:
+    dependencies:
+      vue: 2.6.11
+    dev: false
+    peerDependencies:
+      vue: ^2.6.4
+    resolution:
+      integrity: sha1-S0aPDqp4AQfWqJJJhW5G+W4eG9o=
+      tarball: vuetify/download/vuetify-2.3.8.tgz
   /vuex/3.5.1_vue@2.6.11:
     dependencies:
       vue: 2.6.11
@@ -13179,6 +13297,7 @@ packages:
       integrity: sha1-kkEZEtQ1IU4SxRwq4Qk+VLa7g9k=
       tarball: yorkie/download/yorkie-2.0.0.tgz
 specifiers:
+  '@mdi/font': ^3.6.95
   '@types/jest': ^24.0.19
   '@typescript-eslint/eslint-plugin': ^2.33.0
   '@typescript-eslint/parser': ^2.33.0
@@ -13198,12 +13317,16 @@ specifiers:
   eslint-plugin-prettier: ^3.1.3
   eslint-plugin-vue: ^6.2.2
   prettier: ^1.19.1
+  roboto-fontface: '*'
   sass: ^1.26.5
   sass-loader: ^8.0.2
   typescript: ~3.9.3
   vue: ^2.6.11
   vue-class-component: ^7.2.3
+  vue-cli-plugin-vuetify: ^2.0.7
   vue-property-decorator: ^8.4.2
   vue-router: ^3.2.0
   vue-template-compiler: ^2.6.11
+  vuetify: ^2.2.11
+  vuetify-loader: ^1.3.0
   vuex: ^3.4.0
